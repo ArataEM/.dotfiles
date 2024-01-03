@@ -8,4 +8,4 @@ vim.opt.relativenumber = true
 
 vim.opt.hlsearch = false
 
-vim.g.mapleader = " " 
+vim.g.mapleader = " "
