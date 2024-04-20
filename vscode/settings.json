@@ -1,0 +1,82 @@
+{
+    "git.autofetch": true,
+    "files.associations": {
+        "*.yaml": "yaml"
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Atom One Dark",
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "editor.renderWhitespace": "all",
+    "git.mergeEditor": true,
+    "git.confirmSync": false,
+
+    "terminal.integrated.scrollback": 100000,
+    "terminal.integrated.persistentSessionScrollback": 1000,
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh"
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        },
+        "dash": {
+            "path": "/bin/dash"
+        }
+    },
+    "breadcrumbs.enabled": false,
+    "vim.leader": "<Space>",
+    "vim.hlsearch": false,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        { "before": ["<S-h>"], "commands": [":bprevious"] },
+        { "before": ["<S-l>"], "commands": [":bnext"] },
+
+        { "before": ["leader", "w"], "commands": [":w!"] },
+        { "before": ["leader", "q"], "commands": [":q!"] },
+        { "before": ["leader", "x"], "commands": [":x!"] },
+        {
+            "before": ["[", "d"],
+            "commands": ["editor.action.marker.prev"]
+        },
+        {
+            "before": ["]", "d"],
+            "commands": ["editor.action.marker.next"]
+        },
+        {
+            "before": ["<leader>", "c", "a"],
+            "commands": ["editor.action.quickFix"]
+        },
+        { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+        { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+        {
+            "before": ["g", "h"],
+            "commands": ["editor.action.showDefinitionPreviewHover"]
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.recentChange.enabled": false,
+    "security.allowedUNCHosts": [
+        "wsl.localhost"
+    ]
+}
