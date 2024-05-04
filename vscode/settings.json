@@ -48,8 +48,8 @@
     "vim.normalModeKeyBindingsNonRecursive": [
         { "before": ["<S-h>"], "commands": [":bprevious"] },
         { "before": ["<S-l>"], "commands": [":bnext"] },
-        { "before": ["<C-f>"], "after": ["<C-f>", "z", "z"] },
-        { "before": ["<C-b>"], "after": ["<C-b>", "z", "z"] },
+        { "before": ["<C-d>"], "after": ["<C-d>", "z", "z"] },
+        { "before": ["<C-u>"], "after": ["<C-u>", "z", "z"] },
 
         { "before": ["leader", "w"], "commands": [":w!"] },
         { "before": ["leader", "q"], "commands": [":q!"] },
@@ -88,5 +88,6 @@
     "gitlens.codeLens.recentChange.enabled": false,
     "security.allowedUNCHosts": [
         "wsl.localhost"
-    ]
+    ],
+    "editor.stickyScroll.enabled": false
 }
