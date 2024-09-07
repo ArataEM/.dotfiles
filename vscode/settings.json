@@ -39,6 +39,8 @@
     "editor.lineNumbers": "relative",
     "vim.leader": "<Space>",
     "vim.hlsearch": false,
+    "vim.highlightedyank.enable": true,
+    "vim.useSystemClipboard": true,
     "vim.insertModeKeyBindings": [
         {
             "before": ["j", "j"],
