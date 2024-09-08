@@ -47,6 +47,7 @@ alias ls='ls --color'
 alias la='ls -lAh'
 alias cat='ccat'
 alias less='cless'
+alias vim='nvim'
 
 # fzf
 source /usr/share/doc/fzf/examples/key-bindings.zsh
