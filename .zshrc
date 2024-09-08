@@ -14,6 +14,7 @@ zinit light Aloxaf/fzf-tab
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
 zinit snippet OMZP::command-not-found
+zinit snippet OMZP::colorize
 
 # Load completions
 autoload -Uz compinit && compinit
@@ -44,6 +45,8 @@ setopt hist_find_no_dups
 # Aliases
 alias ls='ls --color'
 alias la='ls -lAh'
+alias cat='ccat'
+alias less='cless'
 
 # fzf
 source /usr/share/doc/fzf/examples/key-bindings.zsh
