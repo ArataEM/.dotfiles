@@ -25,6 +25,7 @@ zinit cdreplay -q
 eval "$(starship init zsh)"
 
 # Keybinds
+bindkey -v
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 bindkey '^H' backward-kill-word
