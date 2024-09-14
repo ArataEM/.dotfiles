@@ -12,29 +12,7 @@
 
     "terminal.integrated.scrollback": 100000,
     "terminal.integrated.persistentSessionScrollback": 1000,
-    "terminal.integrated.profiles.linux": {
-        "bash": {
-            "path": "bash",
-            "icon": "terminal-bash"
-        },
-        "zsh": {
-            "path": "zsh"
-        },
-        "fish": {
-            "path": "fish"
-        },
-        "tmux": {
-            "path": "tmux",
-            "icon": "terminal-tmux"
-        },
-        "pwsh": {
-            "path": "pwsh",
-            "icon": "terminal-powershell"
-        },
-        "dash": {
-            "path": "/bin/dash"
-        }
-    },
+    "terminal.integrated.shellIntegration.enabled": false,
     "breadcrumbs.enabled": false,
     "editor.lineNumbers": "relative",
     "vim.leader": "<Space>",
