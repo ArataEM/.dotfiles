@@ -1,5 +1,5 @@
 {
-    "git.autofetch": true,
+    "window.menuBarVisibility": "visible",
     "files.associations": {
         "*.yaml": "yaml"
     },
@@ -7,18 +7,20 @@
     "workbench.colorTheme": "Atom One Dark",
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "editor.renderWhitespace": "all",
+    "git.autofetch": true,
     "git.mergeEditor": true,
     "git.confirmSync": false,
 
     "terminal.integrated.scrollback": 100000,
-    "terminal.integrated.persistentSessionScrollback": 1000,
+    "terminal.integrated.persistentSessionScrollback": 10000,
     "terminal.integrated.shellIntegration.enabled": false,
     "breadcrumbs.enabled": false,
     "editor.lineNumbers": "relative",
+
     "vim.leader": "<Space>",
     "vim.hlsearch": false,
-    "vim.highlightedyank.enable": true,
     "vim.useSystemClipboard": true,
+    "vim.highlightedyank.enable": true,
     "vim.insertModeKeyBindings": [
         {
             "before": ["j", "j"],
@@ -28,8 +30,8 @@
     "vim.normalModeKeyBindingsNonRecursive": [
         { "before": ["<S-h>"], "commands": [":bprevious"] },
         { "before": ["<S-l>"], "commands": [":bnext"] },
-        { "before": ["<C-d>"], "after": ["<C-d>", "z", "z"] },
-        { "before": ["<C-u>"], "after": ["<C-u>", "z", "z"] },
+        { "before": ["<C-f>"], "after": ["<C-f>", "z", "z"] },
+        { "before": ["<C-b>"], "after": ["<C-b>", "z", "z"] },
 
         { "before": ["leader", "w"], "commands": [":w!"] },
         { "before": ["leader", "q"], "commands": [":q!"] },
@@ -62,12 +64,19 @@
         { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
     ],  
     "vim.handleKeys": {
-        "<C-a>": false
+        "<C-a>": false,
+        "<C-p>": false
     },
+
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.recentChange.enabled": false,
     "security.allowedUNCHosts": [
         "wsl.localhost"
     ],
-    "editor.stickyScroll.enabled": false
+    "vs-kubernetes": {
+        "disable-linters": [
+            "resource-limits"
+        ]
+    },
+    "vsicons.dontShowNewVersionMessage": true
 }
